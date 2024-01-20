@@ -1,12 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap");
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
+img{
+  display:block;
+  max-width: 100%;
+  height: auto;
+
+}
+
+input,button,textarea{
+  font:inherit;
+}
+
+/* css variables */
+
+:root{
+  /* fonts */
+  --FF:"Nunito",sans-serif;
+  --FF-HEADINGS:"Fugaz One",cursive;
+  --FS: clamp(1rem ,2.2vh,1.5rem);
+
+  /* colors */
+
+  --BGCOLOR: orange;
+  --BGCOLOR-FADE: rgb(252,220,160);
+  --BGIMAGE: linear-gradient(to bottom,var(--BGCOLOR),var(--BGCOLOR-FADE))
+}
+
+/* html {
   font-size: 1.5rem;
   font-family: 'Nunito', sans-serif;
 }
@@ -32,4 +60,4 @@ div {
   border: 1px solid #000;
   display: grid;
   place-content: center;
-}
+} */
